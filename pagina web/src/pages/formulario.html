@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100%;
+        }
+
+        .izquierda {
+            width: 50%;
+        }
+
+        .izquierda img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .derecha {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .derecha img {
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        label input {
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="izquierda">
+        <img class="imgen" src="https://tse1.mm.bing.net/th?id=OIP.U8JB9b-gG9zf8MH3r6idbgHaE8&pid=Api&P=0&h=180" alt="tech">
+    </div>
+    <div class="derecha">
+        <img src="https://tse3.mm.bing.net/th?id=OIP.ST2BWXgBFLtr9p0mgBzApwAAAA&pid=Api&P=0&h=180" alt="Usuario">
+        <p>Usuario</p>
+        <label class="usuario"><input type="text" placeholder="Ingrese su usuario"></label>
+        <p>Contraseña</p>
+        <label class="contraseña"><input type="password" placeholder="Ingrese su contraseña"></label>
+        <button>Iniciar Sesión</button>
+    </div>
+</div>
+<div>
+
+</body>
+</html>
